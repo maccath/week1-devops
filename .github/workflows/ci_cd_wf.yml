@@ -27,7 +27,7 @@ jobs:
 
       - name: Run tests with coverage
         run: |
-          python -m pytest -v --cov --junitxml=pytest.xml --cov-report=term-missing:skip-covered tests | tee pytest-coverage.txt
+          python -m pytest -v --cov --junitxml=pytest.xml tests | tee pytest-coverage.txt
 
       - name: Pytest coverage comment
         uses: MishaKav/pytest-coverage-comment@main
